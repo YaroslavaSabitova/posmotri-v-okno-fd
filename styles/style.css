@@ -9,13 +9,13 @@ html {
 }
 
 .page {
+  inline-size: 1200px;
+  block-size: 100%;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
-  background-color: #2ca570;
-  inline-size: 1200px;
-  block-size: 100%;
+  background-color: #1b1919;
 }
 
 h1,

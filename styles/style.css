@@ -13,6 +13,9 @@ html {
   justify-content: center;
   align-items: center;
   margin: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+  outline: 1px solid red;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
@@ -38,6 +41,16 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 /* Кастомный скроллбар */
@@ -77,6 +90,7 @@ ol {
 
 .content__details {
   width: 100%;
+  min-width: 399px;
   height: 100%;
 }
 
@@ -103,5 +117,71 @@ ol {
 
 .content__video-card {
   display: flex;
+  justify-content: space-between;
   align-items: flex-start;
+}
+
+.content__video-card-thumbnail {
+  flex-shrink: 0;
+  min-width: 194px;
+  height: 103px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content__video-card-description-container {
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.search-form__fieldset-title {
+  margin-bottom: 5px;
+  color: #fff;
+  font-family: 'Fira Sans Condensed', Gill Sans, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.title {
+  margin-bottom: 26px;
+  color: #fff;
+  font-family: 'Oswald', Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 94%;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__card-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.content__video-card-title {
+  margin-bottom: 6px;
+  overflow: hidden;
+  font-family: 'Oswald', Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.content__video-card-description {
+  overflow: hidden;
+  color: #fff;
+  font-family: 'Fira Sans Condensed', Gill Sans, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 90%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

@@ -87,6 +87,7 @@ ol {
   flex-direction: column;
   gap: 30px;
   height: 298px;
+  padding-bottom: 2px;
   overflow-y: auto;
 }
 
@@ -238,8 +239,8 @@ input[type='text'] {
 
 .search-form__label:hover .search-form__label-text {
   text-decoration: underline;
-  text-underline-offset: 2px;
   text-decoration-skip-ink: none;
+  text-underline-offset: 2px;
 }
 
 .search-form__pseudo-checkbox {
@@ -261,4 +262,50 @@ input[type='text'] {
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   opacity: 1;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #fff;
+  padding: 5px;
+  color: #fff;
+  font-family: 'Fira Sans Condensed', Gill Sans, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  background: transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 2px;
+}
+
+.button:active {
+  background: #545050;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
+}
+
+.search-form__submit-button {
+  align-self: end;
+  min-width: 194px;
+}
+
+.more-button {
+  max-width: 390px;
+  margin: 0 auto;
 }

@@ -60,7 +60,7 @@ ol {
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
-  background: rgb(217 217 217 / 10%);
+  background-color: rgb(217 217 217 / 10%);
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
@@ -87,7 +87,7 @@ ol {
   flex-direction: column;
   gap: 30px;
   height: 298px;
-  padding-bottom: 2px;
+  padding-bottom: 3px;
   overflow-y: auto;
 }
 
@@ -276,8 +276,7 @@ input[type='text'] {
   font-weight: 700;
   font-size: 18px;
   text-align: center;
-  background: transparent;
-  transition: all 0.3s ease;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -288,7 +287,7 @@ input[type='text'] {
 }
 
 .button:active {
-  background: #545050;
+  background-color: #545050;
 }
 
 .button:focus {
@@ -308,4 +307,35 @@ input[type='text'] {
 .more-button {
   max-width: 390px;
   margin: 0 auto;
+}
+
+.content__card-link {
+  display: block;
+  cursor: pointer;
+}
+
+.content__card-link:active {
+  background-color: #545050;
+}
+
+.content__card-link:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.content__card-link:focus {
+  outline: none;
+}
+
+.content__card-link:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
+}
+
+.content__card-link_current {
+  background-color: #545050;
+}
+
+.content__list-item {
+  padding: 0 3px;
 }

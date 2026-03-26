@@ -206,7 +206,7 @@ ol {
   cursor: pointer;
 }
 
-.search-form__label input {
+.search-form__textfield {
   min-width: 225px;
   border: none;
   border-top: 1px solid #fff;
@@ -217,10 +217,6 @@ ol {
   font-weight: 400;
   font-size: 18px;
   background-color: #1b1919;
-}
-
-.search-form__textfield::placeholder {
-  color: rgb(255 255 255 / 0.7);
 }
 
 input[type='text'] {
@@ -240,6 +236,10 @@ input[type='text'] {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   text-underline-offset: 2px;
+}
+
+.search-form__label:active .search-form__label-text {
+  text-decoration: none;
 }
 
 .search-form__pseudo-checkbox {
@@ -286,6 +286,7 @@ input[type='text'] {
 }
 
 .button:active {
+  text-decoration: none;
   background-color: #545050;
 }
 
@@ -308,13 +309,14 @@ input[type='text'] {
   margin: 0 auto;
 }
 
-.content__card-link:active {
-  background-color: #545050;
-}
-
 .content__card-link:hover {
   text-decoration: underline;
   text-decoration-skip-ink: none;
+}
+
+.content__card-link:active {
+  text-decoration: none;
+  background-color: #545050;
 }
 
 .content__card-link:focus {

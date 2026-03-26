@@ -157,8 +157,10 @@ ol {
 }
 
 .content__card-link {
+  display: block;
   color: #fff;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .content__video-card-title {
@@ -303,11 +305,6 @@ input[type='text'] {
 .more-button {
   max-width: 390px;
   margin: 0 auto;
-}
-
-.content__card-link {
-  display: block;
-  cursor: pointer;
 }
 
 .content__card-link:active {

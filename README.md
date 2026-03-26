@@ -1,1 +1,1 @@
-<https://github.com/YaroslavaSabitova/posmotri-v-okno-fd>
+https://github.com/YaroslavaSabitova/posmotri-v-okno-fd
